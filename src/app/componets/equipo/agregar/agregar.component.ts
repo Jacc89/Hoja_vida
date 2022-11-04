@@ -26,10 +26,6 @@ export class AgregarComponent implements OnInit {
   }
   onSubmit(){
     console.log(this.formEqui.value);
-    // this.service.crearClient(this.clientForm.value).subscribe((data:any)=>{
-    //   alert("cliente creado");
-      // this.router.navigate(['/cliente']);
-    // })
     alert("Cliente creado");
     this.router.navigate(['/agregar']);
     this.formEqui.reset();
