@@ -1,0 +1,48 @@
+<mat-card class="center">
+    <h2 class="text-center">Registro Equipo</h2>
+    <form [formGroup]="formEqui" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Codigo equipo</mat-label>
+        <input type="number" matInput placeholder="Codigo Equipo" formControlName="cod_equipo">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Nombre equipo</mat-label>
+        <input matInput placeholder="Nombre Equipo" formControlName="nom_equipo">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Usuario</mat-label>
+        <input matInput placeholder="Usuario" formControlName="usuario">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Ubicacion</mat-label>
+        <input matInput placeholder="Ubicacion" formControlName="ubicacion">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Dependencia</mat-label>
+        <input matInput placeholder="Dependencia" formControlName="dependencia">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Fecha registro</mat-label>
+        <input type="date" matInput placeholder="fecha" formControlName="fecha_registro">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" class="producto-form-btn" [disabled]="!formEqui.valid">Registro Equipo</button>
+      <button mat-raised-button color="warn" class="producto-form-btn" (click)="cancelar()">Cancelar</button>
+  
+    </form>
+  
+  
+  </mat-card>
+  
+  

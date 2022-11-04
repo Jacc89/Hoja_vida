@@ -1,0 +1,19 @@
+.example-card {
+    
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .center{
+    align-items: center;
+    padding-left: 25rem;
+    margin: 12rem;
+    border-color: transparent;
+  }
+  .center h1{
+    
+    color: rgb(16, 44, 225);
+    }
